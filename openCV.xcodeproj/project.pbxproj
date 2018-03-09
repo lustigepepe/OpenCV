@@ -12,7 +12,8 @@
 		C71E059320503F0B001269C6 /* libopencv_highgui.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E059220503F0B001269C6 /* libopencv_highgui.3.4.1.dylib */; };
 		C71E059520503F42001269C6 /* libopencv_imgproc.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E059420503F42001269C6 /* libopencv_imgproc.3.4.1.dylib */; };
 		C71E059820504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E059720504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib */; };
-		C75B497A20519EA10069F373 /* readFishPic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75B497820519EA10069F373 /* readFishPic.cpp */; };
+		C75B497E2051A36A0069F373 /* readFishPic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75B497C2051A36A0069F373 /* readFishPic.cpp */; };
+		C7FFF2562052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFF2552052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,8 +36,11 @@
 		C71E059420503F42001269C6 /* libopencv_imgproc.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.4.1.dylib; path = ../../../../usr/local/Cellar/opencv/3.4.1_2/lib/libopencv_imgproc.3.4.1.dylib; sourceTree = "<group>"; };
 		C71E0596205041AD001269C6 /* Fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fish.jpg; sourceTree = "<group>"; };
 		C71E059720504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.4.1.dylib; path = ../../../../usr/local/Cellar/opencv/3.4.1_2/lib/libopencv_imgcodecs.3.4.1.dylib; sourceTree = "<group>"; };
-		C75B497820519EA10069F373 /* readFishPic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = readFishPic.cpp; sourceTree = "<group>"; };
-		C75B497920519EA10069F373 /* readFishPic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = readFishPic.hpp; sourceTree = "<group>"; };
+		C75B497C2051A36A0069F373 /* readFishPic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readFishPic.cpp; sourceTree = "<group>"; };
+		C75B497D2051A36A0069F373 /* readFishPic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = readFishPic.hpp; sourceTree = "<group>"; };
+		C7FFF2552052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_dnn_objdetect.3.4.1.dylib; sourceTree = "<group>"; };
+		C7FFF259205305CE0059ED8A /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		C7FFF25A205305CE0059ED8A /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C71E059120503A5D001269C6 /* libopencv_core.3.4.1.dylib in Frameworks */,
+				C7FFF2562052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib in Frameworks */,
 				C71E059320503F0B001269C6 /* libopencv_highgui.3.4.1.dylib in Frameworks */,
 				C71E059820504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib in Frameworks */,
 				C71E059520503F42001269C6 /* libopencv_imgproc.3.4.1.dylib in Frameworks */,
@@ -57,6 +62,11 @@
 		C71E057B205023A3001269C6 = {
 			isa = PBXGroup;
 			children = (
+				C7FFF259205305CE0059ED8A /* haarcascade_eye_tree_eyeglasses.xml */,
+				C7FFF25A205305CE0059ED8A /* haarcascade_frontalface_alt.xml */,
+				C7FFF2552052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib */,
+				C75B497F2051A3CD0069F373 /* Recognition */,
+				C75B497B2051A2970069F373 /* ReadPic */,
 				C71E059720504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib */,
 				C71E0596205041AD001269C6 /* Fish.jpg */,
 				C71E059420503F42001269C6 /* libopencv_imgproc.3.4.1.dylib */,
@@ -79,10 +89,24 @@
 			isa = PBXGroup;
 			children = (
 				C71E0587205023A3001269C6 /* main.cpp */,
-				C75B497820519EA10069F373 /* readFishPic.cpp */,
-				C75B497920519EA10069F373 /* readFishPic.hpp */,
 			);
 			path = openCV;
+			sourceTree = "<group>";
+		};
+		C75B497B2051A2970069F373 /* ReadPic */ = {
+			isa = PBXGroup;
+			children = (
+				C75B497C2051A36A0069F373 /* readFishPic.cpp */,
+				C75B497D2051A36A0069F373 /* readFishPic.hpp */,
+			);
+			path = ReadPic;
+			sourceTree = "<group>";
+		};
+		C75B497F2051A3CD0069F373 /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recognition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75B497A20519EA10069F373 /* readFishPic.cpp in Sources */,
+				C75B497E2051A36A0069F373 /* readFishPic.cpp in Sources */,
 				C71E0588205023A3001269C6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +180,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -211,7 +235,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -262,8 +286,10 @@
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/3.4.1_2/include/;
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/Cellar/opencv/3.4.1_2/lib/,
-					/usr/local/Cellar/opencv/3.4.1_2/lib,
+					"$(PROJECT_DIR)",
 				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -277,8 +303,10 @@
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/3.4.1_2/include/;
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/Cellar/opencv/3.4.1_2/lib/,
-					/usr/local/Cellar/opencv/3.4.1_2/lib,
+					"$(PROJECT_DIR)",
 				);
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
