@@ -13,6 +13,7 @@
 		C71E059520503F42001269C6 /* libopencv_imgproc.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E059420503F42001269C6 /* libopencv_imgproc.3.4.1.dylib */; };
 		C71E059820504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E059720504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib */; };
 		C75B497E2051A36A0069F373 /* readFishPic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75B497C2051A36A0069F373 /* readFishPic.cpp */; };
+		C7DB34B02053677C00483966 /* videoFaceDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7DB34AE2053677C00483966 /* videoFaceDetection.cpp */; };
 		C7FFF2562052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FFF2552052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		C71E059720504763001269C6 /* libopencv_imgcodecs.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.4.1.dylib; path = ../../../../usr/local/Cellar/opencv/3.4.1_2/lib/libopencv_imgcodecs.3.4.1.dylib; sourceTree = "<group>"; };
 		C75B497C2051A36A0069F373 /* readFishPic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readFishPic.cpp; sourceTree = "<group>"; };
 		C75B497D2051A36A0069F373 /* readFishPic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = readFishPic.hpp; sourceTree = "<group>"; };
+		C7DB34AE2053677C00483966 /* videoFaceDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = videoFaceDetection.cpp; sourceTree = "<group>"; };
+		C7DB34AF2053677C00483966 /* videoFaceDetection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = videoFaceDetection.hpp; sourceTree = "<group>"; };
 		C7FFF2552052D4FC0059ED8A /* libopencv_dnn_objdetect.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_dnn_objdetect.3.4.1.dylib; sourceTree = "<group>"; };
 		C7FFF259205305CE0059ED8A /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
 		C7FFF25A205305CE0059ED8A /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 		C75B497F2051A3CD0069F373 /* Recognition */ = {
 			isa = PBXGroup;
 			children = (
+				C7DB34AE2053677C00483966 /* videoFaceDetection.cpp */,
+				C7DB34AF2053677C00483966 /* videoFaceDetection.hpp */,
 			);
 			path = Recognition;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75B497E2051A36A0069F373 /* readFishPic.cpp in Sources */,
+				C7DB34B02053677C00483966 /* videoFaceDetection.cpp in Sources */,
 				C71E0588205023A3001269C6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
